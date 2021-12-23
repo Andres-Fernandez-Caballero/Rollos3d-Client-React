@@ -1,25 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useState} from 'react';
+import rollo from './assets/rollo.svg';
 import './App.css';
+import {AuthContext} from "./contexts/Auth.context";
+import Login from "./components/Login";
+import {useGoogleAuth} from "./hooks/useGoogleAuth";
+import LoginPage from "./pages/LoginPage";
+import AppRoute from "./routes/App.route";
 
 function App() {
+
+   const {userAuth, dispatchAuthUserEvent} =  useGoogleAuth();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <AuthContext.Provider value={{userAuth, dispatchAuthUserEvent}}>
+        <div className="App">
+            <AppRoute />
+        </div>
+      </AuthContext.Provider>
   );
 }
 
