@@ -9,7 +9,7 @@ function LoginPage() {
 
     return (
         <>
-            <main className="App-header">
+            <main className="app-global-container app-container App-header">
                 <img src={filament} className="App-logo" alt="logo" />
 
                 <h1 role="title" className='App-title'>Gestor de rollos</h1>

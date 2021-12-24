@@ -27,13 +27,17 @@ export const useGoogleAuth = () => {
 
     const login = async () => {
 
-        const {user} = await firebase.auth().signInWithPopup((googleAuthProvider))
+        try {
+            const {user} = await firebase.auth().signInWithPopup((googleAuthProvider))
 
-        setUserAuth({
-            ...userAuth,
-            isGuest: false,
-            user,
-        });
+            setUserAuth({
+                ...userAuth,
+                isGuest: false,
+                user,
+            });
+        } catch (err) {
+            alert('no se pudo realizar la solicitud' + err)
+        }
 
     }
 

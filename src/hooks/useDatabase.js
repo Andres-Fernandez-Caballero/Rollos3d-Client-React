@@ -3,9 +3,6 @@ import {DatabaseActions} from './../actions/DatabaseActions';
 
 export const useDatabase = () => {
 
-    // {color_hex:'#f46d61',color_name: 'rojo', temperature:200},
-    // {color_hex:'#1c4046',color_name: 'azul', temperature:200}
-
     let initialstate = [
     ];
 

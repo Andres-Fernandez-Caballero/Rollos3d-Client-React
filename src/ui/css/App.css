@@ -5,6 +5,11 @@
   --gray-dark-color: #292929;
 }
 
+.app-global-container {
+  background-color: var(--gray-dark-color);
+  overflow-y: hidden;
+}
+
 .App {
   text-align: center;
 }
@@ -19,6 +24,12 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+
+.app-container {
+  height:100vh;
+
+}
+
 
 .App-header {
   background-color:var(--gray-dark-color);
