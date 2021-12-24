@@ -2,7 +2,7 @@ import React from 'react';
 import {Navigate, Route, Routes} from "react-router-dom";
 import LoginPage from "../pages/LoginPage";
 
-const PublicRoute = (props) => {
+const PublicRoute = () => {
     return (
         <Routes>
             <Route path="/login" element={<LoginPage/>}/>

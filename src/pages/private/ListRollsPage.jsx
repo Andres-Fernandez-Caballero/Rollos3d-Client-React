@@ -1,16 +1,11 @@
-import React, {useContext} from 'react';
+import React from 'react';
 import NavigationBar from "../../components/NavigationBar";
 import List from "../../components/rolls-crud/List";
-import { useDatabase } from '../../hooks/useDatabase';
-import {DatabaseContext} from "../../contexts/Database.context";
-import {DatabaseActions} from "../../actions/DatabaseActions";
 import {useNavigate} from "react-router-dom";
 import { Fab } from '@mui/material';
 import {Add} from '@mui/icons-material';
 
 const  ListRollsPage = () => {
-
-    const {dispatchDatabaseEvent} = useContext(DatabaseContext);
 
     const navigate = useNavigate();
 

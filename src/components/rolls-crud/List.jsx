@@ -1,5 +1,4 @@
 import React, {useContext} from 'react';
-import { useDatabase } from '../../hooks/useDatabase';
 import imgRollo2 from './../../assets/rollo_2.png';
 import {DatabaseContext} from "../../contexts/Database.context";
 

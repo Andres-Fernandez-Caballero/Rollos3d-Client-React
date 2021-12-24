@@ -12,7 +12,7 @@ function LoginPage() {
             <main className="app-global-container app-container App-header">
                 <img src={filament} className="App-logo" alt="logo" />
 
-                <h1 role="title" className='App-title'>Gestor de rollos</h1>
+                <h1 aria-label="title" className='App-title'>Gestor de rollos</h1>
                 <p aria-label='auth-state'>{userAuth.isGuest? 'Visitante': 'usuario: ' + userAuth.user.displayName }</p>
                 <br/>
                 <Login/>

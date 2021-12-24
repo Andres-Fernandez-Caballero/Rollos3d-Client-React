@@ -1,7 +1,6 @@
 import {useEffect, useState} from "react";
 import {firebase, googleAuthProvider} from "../firebase/config";
 import {AuthActions} from "../actions/AuthActions";
-import {useNavigate} from "react-router-dom";
 
 export const useGoogleAuth = () => {
 
@@ -49,10 +48,10 @@ export const useGoogleAuth = () => {
         localStorage.removeItem('auth');
     }
 
-    const dispatchAuthUserEvent = (action) => {
+    const dispatchAuthUserEvent = async (action) => {
         switch (action){
             case AuthActions.LOGIN:
-                login()
+                await login()
                 return
             case AuthActions.LOGOUT:
                 logOut()

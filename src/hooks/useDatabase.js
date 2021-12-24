@@ -1,5 +1,5 @@
 import {useState} from "react";
-import {DatabaseActions} from './../actions/DatabaseActions';
+import {DatabaseActions} from '../actions/DatabaseActions';
 
 export const useDatabase = () => {
 
@@ -24,7 +24,7 @@ export const useDatabase = () => {
         }
         );
     };
-
+/*
     const detail = (id) => {
 
     }
@@ -40,7 +40,7 @@ export const useDatabase = () => {
     const remove = (rollo) => {
 
     }
-
+*/
     const dispatchDatabaseEvent = (action, payload) => {
         switch(action){
             case DatabaseActions.ADD:

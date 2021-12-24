@@ -13,7 +13,6 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 
-import {Link} from 'react-router-dom'
 import {AuthContext} from "../contexts/Auth.context";
 import {AuthActions} from "../actions/AuthActions";
 import {appSettings} from "../config";
@@ -21,8 +20,7 @@ import {Divider, ListItemIcon} from "@mui/material";
 import {Logout} from "@mui/icons-material";
 
 
-const pages = ['rollos, crear'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+const pages = ['rollos', 'crear'];
 
 const NavigationBar = () => {
 

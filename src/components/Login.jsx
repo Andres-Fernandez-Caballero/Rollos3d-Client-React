@@ -1,7 +1,6 @@
 import React, {useContext} from 'react';
 import GoogleButton from "react-google-button";
 import {AuthContext} from "../contexts/Auth.context";
-import {useGoogleAuth} from "../hooks/useGoogleAuth";
 import {AuthActions} from "../actions/AuthActions";
 
 

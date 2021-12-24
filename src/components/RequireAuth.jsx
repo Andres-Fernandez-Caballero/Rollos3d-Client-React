@@ -1,7 +1,7 @@
 import React, {useContext} from 'react';
 import {AuthContext} from "../contexts/Auth.context";
 import {Navigate, useLocation} from "react-router-dom";
-import PublicRoute from "../routes/Public.route";
+
 
 function RequireAuth({children}) {
 
